@@ -160,4 +160,8 @@ return [
 
     'attributes' => [],
 
+    'initialInvalid' => 'Initial should match the first character of the given first name.',
+    'postalCodeInvalid' => 'The postal code entered is invalid',
+    'phone' => 'The :attribute field contains an invalid number.',
+
 ];
