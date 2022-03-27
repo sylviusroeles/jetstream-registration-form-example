@@ -7,7 +7,7 @@
 
 <div>
     <x-jet-label for="initial" value="{{ __('Initial') }}" />
-    <x-jet-input id="initial" class="block mt-1 w-full" type="text" name="initial" required autofocus autocomplete="initial" x-bind:value="'{{old('initial')}}' ?? first_name.charAt(0).toUpperCase()" />
+    <x-jet-input id="initial" class="block mt-1 w-full" type="text" name="initial" required autofocus autocomplete="initial" x-bind:value="'{{old('initial')}}'.length ? '{{old('initial')}}' : first_name.charAt(0).toUpperCase()" />
 </div>
 
 <div class="mb-6">
